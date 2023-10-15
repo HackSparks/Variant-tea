@@ -7,7 +7,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -114,6 +115,34 @@ header .navbar {
   display: none;
 }
 
+#about {
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 3rem;
+}
+
+.about-container .aleft img {
+  width: 450em;
+  height: 450em;
+}
+
+.about-container .aright {
+  max-width: 50%;
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 10px;
@@ -133,8 +162,9 @@ header .navbar {
     font-size: 1.7rem;
   }
 
-    
-  #hamburger-btn, #close-menu-btn {
+
+  #hamburger-btn,
+  #close-menu-btn {
     display: block;
   }
 
@@ -170,33 +200,54 @@ header .navbar {
     font-size: 2.3rem;
     line-height: 60px;
   }
-  
+
   .hero-section .content button {
     padding: 9px 18px;
   }
+
+  .about-container .aleft img {
+    width: 20em;
+    height: 20em;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container .aright {
+    max-width: 100%;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
 }
 
-.cont{
+.cont {
   padding-top: 30px;
   padding-left: 30px;
   background-color: rgb(219, 223, 212);
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-  }
-  .img{
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.img {
   position: relative;
   overflow: hidden;
-  }
-  .img > img{
+}
+
+.img>img {
   display: block;
   width: 90%;
   aspect-ratio: 1/1;
   padding-bottom: 30px;
   object-fit: cover;
   object-position: center;
-  
-  }
-  .img > .content{
+
+}
+
+.img>.content {
   position: absolute;
   inset: 0;
   font-size: 1rem;
@@ -205,22 +256,27 @@ header .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
-  .img > img,
-  .img > .content{
+}
+
+.img>img,
+.img>.content {
   transition: 200ms ease-in-out;
-  }
-  .img:hover > img.blur{
+}
+
+.img:hover>img.blur {
   filter: blur(5px);
-  
-  }
-  .img:hover > img.zoom{
+
+}
+
+.img:hover>img.zoom {
   transform: scale(1.1);
-  
-  }
-  .img > .content.fade{
+
+}
+
+.img>.content.fade {
   opacity: 0;
-  }
-  .img:hover > .content.fade{
+}
+
+.img:hover>.content.fade {
   opacity: 1;
-  }   
+}
