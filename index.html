@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea website</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts Links For Icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a class="logo" href="#">Tea</span></a>
-        <ul class="menu-links">
-          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-          <li><a href="#">Home</a></li>
-          <li><a href="#images">Gallery</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#"></a></li>
-        </ul>
-        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
-      </nav>
-    </header>
 
-    <section class="hero-section">
-      <div class="content">
-        <h2>Start Your Day With Fresh Tea</h2>
-        <p>
-          Tea is a popular and beloved beverage enjoyed by 
-          people around the world.Awaken your senses with a steaming cup of liquid motivation.
-        </p>
-        <button>View More</button>
-      </div>
-    </section>
-    <div style="width: 100%; background-color: rgb(37, 35, 42); padding-top: 20px; padding-bottom: 20px; text-align: center;">
-      <h1 style="color:rgb(232, 221, 221)">Share Your images </h1>
-   
-    </div>   
-    <div id="images">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts Links For Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#">Tea</span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="#">Home</a></li>
+        <li><a href="#images">Gallery</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content">
+      <h2>Start Your Day With Fresh Tea</h2>
+      <p>
+        Tea is a popular and beloved beverage enjoyed by
+        people around the world.Awaken your senses with a steaming cup of liquid motivation.
+      </p>
+      <button>View More</button>
+    </div>
+  </section>
+  <div
+    style="width: 100%; background-color: rgb(37, 35, 42); padding-top: 20px; padding-bottom: 20px; text-align: center;">
+    <h1 style="color:rgb(232, 221, 221)">Share Your images </h1>
+
+  </div>
+  <div id="images">
     <div class="cont">
       <div class="img">
-      <img class="blur" src="tea-image.jpg" height="350px" width="33%" class="image" alt="Upload your image">
-    
-    </div>
-      <div class="img">
-      <img class="zoom" src="cup-tea.avif" height="350px" width="33%" alt="Upload your image">
-      
-  </div>
-      <div class="img">
-      <img class="blur" src="tea-image-1.jpg" height="350px" width="33%" alt="Upload your image">
-     
-</div>
-      <div class="img">
-      <img  class="zoom" src="tea-image2.jpg" height="350px" width="33%" alt="Upload your image">
-     
-  </div>
-      <div class="img">
-      <img class="blur" src="tea-07.jpg" height="350px" width="33%" alt="Upload your image">
-      
-  </div>
-      <div class="img">
-      <img class="zoom" src="tea-image-4.webp" height="350px" width="33%" alt="Upload your image">
-    
-    </div>
-    <div class="img">
-      <img class="zoom" src="tea-glass.jpg" height="350px" width="33%" alt="Upload your image">
-      
-    </div>
-    <div class="img">
-      <img class="zoom" src="tea-glass-1.jpg" height="350px" width="33%" alt="Upload your image">
-     
-    </div>
-    <div class="img">
-      <img class="zoom" src="venu/tea-1.jpg" height="350px" width="33%" alt="Upload your image">
-     
-    </div>
-    <div class="img">
-      <img class="zoom" src="" height="350px" width="33%" alt="Upload your image">
- 
-    </div>
-    <div class="img">
-      <img class="zoom" src="" height="350px" width="33%"  alt="Upload your image">
-     
-    </div>
-    <div class="img">
-      <img class="zoom" src="" height="350px" width="33%" alt="Upload your image">
-     </div>
-       <div class="img">
-         <img class="zoom" src="" height"350px" width="33%" alt="Upload your image">
-    </div>
-  </div>
-</div>
+        <img class="blur" src="assets/tea-image.jpg" height="350px" width="33%" class="image" alt="Upload your image">
 
-    <script>
-      const header = document.querySelector("header");
-      const hamburgerBtn = document.querySelector("#hamburger-btn");
-      const closeMenuBtn = document.querySelector("#close-menu-btn");
+      </div>
+      <div class="img">
+        <img class="zoom" src="assets/cup-tea.avif" height="350px" width="33%" alt="Upload your image">
 
-      // Toggle mobile menu on hamburger button click
-      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+      </div>
+      <div class="img">
+        <img class="blur" src="assets/tea-image-1.jpg" height="350px" width="33%" alt="Upload your image">
 
-      // Close mobile menu on close button click
-      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-    </script>
-    
-  </body>
+      </div>
+      <div class="img">
+        <img class="zoom" src="assets/tea-image2.jpg" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="blur" src="assets/tea-07.jpg" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="zoom" src="assets/tea-image-4.webp" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="blur" src="assets/tea-glass.jpg" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="zoom" src="assets/tea-glass-1.jpg" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="blur" src="assets/tea-1.jpg" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="zoom" src="assets/team-image-12.jpeg" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="blur" src="assets/tea-image-13.avif" height="350px" width="33%" alt="Upload your image">
+
+      </div>
+      <div class="img">
+        <img class="zoom" src="assets/teA-IMAGE-14.avif" height="350px" width="33%" alt="Upload your image">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+
+</body>
+
 </html>
