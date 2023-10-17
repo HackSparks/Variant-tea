@@ -9,6 +9,8 @@
   <!-- Google Fonts Links For Icon -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -43,26 +45,29 @@
       <h1 style="color:rgb(232, 221, 221)"> About Us</h1>
 
     </div>
-<div class="about-container">
-  <div class="aleft">
-    <img class="blur" src="assets/tea-glass.jpg"  alt="Upload your image">
-  </div>
+    <div class="about-container">
+      <div class="aleft">
+        <img class="blur" src="assets/tea-glass.jpg" alt="Upload your image">
+      </div>
 
-  <div class="aright">
-   <p>
-     Tea Haven is your destination for the finest teas from around the world. We are passionate about bringing the art
-     of tea to your cup.
-   </p>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in pariatur doloribus consequuntur rerum
-     nesciunt totam laborum placeat omnis, facilis, quisquam laudantium beatae ad. Temporibus asperiores veniam libero
-     earum doloremque ratione molestiae unde ea ex repellendus accusantium voluptas quod animi quaerat vel optio,
-     voluptatibus laudantium sapiente nisi adipisci? Quae.</p>
-   <p>
-     Our journey began in 2005, and since then, we have sourced the highest-quality tea leaves, herbs, and spices. We
-     are dedicated to providing a diverse range of flavors and blends to suit every tea enthusiast.
-   </p>
-  </div>
-</div>
+      <div class="aright">
+        <p>
+          Tea Haven is your destination for the finest teas from around the world. We are passionate about bringing the
+          art
+          of tea to your cup.
+        </p>
+        <p>Tea, a beverage with a rich 
+          history dating back millennia, is an infusion of Camellia sinensis
+ leaves that has captivated cultures worldwide.
+          This aromatic and flavorful drink comes in a variety of types, including green, black, white, oolong, and herbal teas, each with its unique characteristics and health benefits.
+          Beyond its delightful taste, tea is renowned for its potential positive impacts on health, attributed to its abundant polyphenols, antioxidants, and other bioactive compounds.</p>
+        <p>
+          Our journey began in 2005, and since then, we have sourced the highest-quality tea leaves, herbs, and spices.
+          We
+          are dedicated to providing a diverse range of flavors and blends to suit every tea enthusiast.
+        </p>
+      </div>
+    </div>
   </div>
 
   <div id="images">
@@ -93,10 +98,6 @@
 
       </div>
       <div class="img">
-        <img class="zoom" src="assets/tea-image-4.webp" height="350px" width="30%" alt="Upload your image">
-
-      </div>
-      <div class="img">
         <img class="blur" src="assets/tea-glass.jpg" height="350px" width="30%" alt="Upload your image">
 
       </div>
@@ -106,7 +107,6 @@
       </div>
       <div class="img">
         <img class="blur" src="assets/tea-1.jpg" height="350px" width="30%" alt="Upload your image">
-
       </div>
       <div class="img">
         <img class="zoom" src="assets/team-image-12.jpeg" height="350px" width="30%" alt="Upload your image">
@@ -114,57 +114,61 @@
       </div>
       <div class="img">
         <img class="blur" src="assets/tea-image-13.avif" height="350px" width="30%" alt="Upload your image">
+      </div>
 
+      <div class="img">
+        <img class="zoom" src="assets/teA-IMAGE-14.avif" height="350px" width="33%" alt="Upload your image">
       </div>
       <div class="img">
-        <img class="zoom" src="assets/teA-IMAGE-14.avif" height="350px" width="30%" alt="Upload your image">
-     
-       </div>
-      <div class="img">
-        <img class="blur" src="assets/" height="350px" width="30%" alt="Upload your image">
+        <img class="blur" src="assets/tea- 2.jpg" height="350px" width="30%" alt="Upload your image">
+      </div>
 
-   
-     </div>
       <div class="img">
-        <img class="blur" src="assets/" height="350px" width="30%" alt="Upload your image">
-
-      
-   </div>
+        <img class="blur" src="assets/tea-2s.jpg" height="350px" width="33%" alt="Upload your image">
+      </div>
       <div class="img">
-        <img class="blur" src="assets/" height="350px" width="30%" alt="Upload your image">
-
-    
-   </div>
+        <img class="zoom" src="assets/" height="350px" width="33%" alt="Upload your image">
+      </div>
       <div class="img">
-        <img class="blur" src="assets/" height="350px" width="30%" alt="Upload your image">
-
-  
-   </div>
-      <div class="img">
-        <img class="blur" src="assets/" height="350px" width="30%" alt="Upload your image">
-
-     
-   </div>
-      <div class="img">
-        <img class="blur" src="assets/" height="350px" width="30%" alt="Upload your image">
-
+        <img class="blur" src="assets/" height="350px" width="33%" alt="Upload your image">
       </div>
     </div>
+
+
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <a href="#">Tea</a>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#images">Gallery</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
   </div>
+</footer>
 
-
-
-  <script>
-    const header = document.querySelector("header");
-    const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const closeMenuBtn = document.querySelector("#close-menu-btn");
-
-    // Toggle mobile menu on hamburger button click
-    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-
-    // Close mobile menu on close button click
-    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-  </script>
 
 </body>
 
